@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ASTEROIDS_VECTOR_2_H
+#define ASTEROIDS_VECTOR_2_H
 namespace Asteroids
 {
 	struct Vector2
@@ -82,3 +83,4 @@ namespace Asteroids
 		Vector2& normalized();
 	};
 }
+#endif
