@@ -26,7 +26,7 @@ void Entity::Destroy()
 
 void Entity::OnDestory()
 {
-	for (auto it : components)
+	for (auto it : m_components)
 		it.second->OnDestroy();
 }
 
