@@ -1,5 +1,5 @@
 #include "Headers/Vector2.h"
-using Asteroids::Vector2;
+using GameEngine::Vector2;
 #include <cmath>
 
 float Vector2::Distance(Vector2& a, Vector2& b)

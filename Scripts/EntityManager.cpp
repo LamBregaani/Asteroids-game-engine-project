@@ -1,6 +1,7 @@
 #include "Headers/EntityManager.h"
 using GameEngine::EntityManager;
 using GameEngine::EntityVec;
+using GameEngine::Entity;
 #include <vector>
 #include <algorithm>
 #include <iostream>

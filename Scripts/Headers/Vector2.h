@@ -1,6 +1,6 @@
 #ifndef ASTEROIDS_VECTOR_2_H
 #define ASTEROIDS_VECTOR_2_H
-namespace Asteroids
+namespace GameEngine
 {
 	struct Vector2
 	{
@@ -13,9 +13,7 @@ namespace Asteroids
 		Vector2(float xin, float yin)
 			:x(xin),
 			y(yin)
-		{
-
-		}
+		{}
 
 		Vector2 operator + (const Vector2& rhs) const
 		{

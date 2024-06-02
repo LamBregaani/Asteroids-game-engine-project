@@ -26,7 +26,7 @@ namespace GameEngine
       //Whether the entity is marked as destoryed
       bool	m_isDestoryed = false;
 
-      unordered_map<string, Component*> components;
+      unordered_map<string, Component*> m_components;
 
       Entity(const std::string& tag, std::size_t id);
 
@@ -49,7 +49,7 @@ namespace GameEngine
 
          cout << "Existing component type is: " << name << "\n";
 
-         if (components.count(name))
+         if (m_components.count(name))
          {
             cerr << "Component already added";
             return nullptr;
@@ -57,9 +57,9 @@ namespace GameEngine
          else
          {
             cout << "Adding existing component\n";
-            components.emplace(name, component);
+            m_components.emplace(name, component);
 
-            if (components.find(name) == components.end())
+            if (m_components.find(name) == m_components.end())
             {
                cout << "Component not added\n";
                return nullptr;
@@ -82,7 +82,7 @@ namespace GameEngine
 
          cout << "Component type is: " << name << "\n";
 
-         if (components.count(name))
+         if (m_components.count(name))
          {
             cerr << "Component already added";
             return nullptr;
@@ -93,9 +93,9 @@ namespace GameEngine
             T *component = new T();
 
             cout << "Adding component\n";
-            components.emplace(name, component);
+            m_components.emplace(name, component);
 
-            if (components.find(name) == components.end())
+            if (m_components.find(name) == m_components.end())
             {
                cout << "Component not added\n";
                return nullptr;
@@ -114,13 +114,13 @@ namespace GameEngine
       {
          string name = typeid(T*).name();
 
-         if (components.find(name) == components.end())
+         if (m_components.find(name) == m_components.end())
          {
             cerr << "Component not found";
             return nullptr;
          }
          else
-            return (T*)components.at(name);
+            return (T*)m_components.at(name);
       }
    };
 }
