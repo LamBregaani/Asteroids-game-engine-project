@@ -1,6 +1,6 @@
 #include "Headers/EntityManager.h"
-using Asteroids::EntityManager;
-using Asteroids::EntityVec;
+using GameEngine::EntityManager;
+using GameEngine::EntityVec;
 #include <vector>
 #include <algorithm>
 #include <iostream>

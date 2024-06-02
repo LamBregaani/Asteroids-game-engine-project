@@ -2,10 +2,10 @@
 #define ASTEROIDS_COLLIDER_H
 
 #include "Component.h"
-using Asteroids::Component;
+using GameEngine::Component;
 
 #include "Vector2.h"
-using Asteroids::Vector2;
+using GameEngine::Vector2;
 
 namespace Asteroids
 {

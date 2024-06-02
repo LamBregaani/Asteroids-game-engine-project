@@ -1,6 +1,6 @@
 
 #include "Headers/Entity.h"
-using Asteroids::Entity;
+using GameEngine::Entity;
 
 Entity::Entity(const std::string& tag, std::size_t id)
 	:m_tag(tag),

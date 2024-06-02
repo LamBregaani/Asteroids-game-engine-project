@@ -4,7 +4,7 @@
 #include <string>
 using std::string;
 
-namespace Asteroids
+namespace GameEngine
 {
    class Component
    {

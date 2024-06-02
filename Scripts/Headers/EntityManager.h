@@ -4,11 +4,10 @@
 #include <vector>
 #include <memory>
 #include "Entity.h"
-using Asteroids::Entity;
 #include <map>
 #include <string>
 
-namespace Asteroids
+namespace GameEngine
 {
 	typedef std::vector	<std::shared_ptr<Entity>> EntityVec;
 	typedef std::map	<std::string, EntityVec> EntityMap;

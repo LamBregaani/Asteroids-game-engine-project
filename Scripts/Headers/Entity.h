@@ -16,7 +16,7 @@ using std::cerr;
 
 #include "Component.h"
 
-namespace Asteroids
+namespace GameEngine
 {
    class Entity
    {
